@@ -14,7 +14,7 @@ yum remove git -y
 yum install -y libperl gcc curl-devel expat-devel gettext-devel openssl-devel zlib-devel perl-devel
 
 # download git-1.8.5
-{code}
+
 cd /usr/src
 wget https://git-core.googlecode.com/files/git-1.8.5.3.tar.gz
 tar -xzf git-1.8.5.3.tar.gz
@@ -23,7 +23,7 @@ make prefix=/usr/src/git all
 make prefix=/usr/src/git install
 echo "export PATH=$PATH:/usr/src/git/bin" >> /etc/bashrc
 source /etc/bashrc
-{code}
+
 #check git version
 git --version
 
